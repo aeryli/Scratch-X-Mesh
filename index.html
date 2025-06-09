@@ -1,0 +1,15 @@
+<input type="text" id="myText">
+<button onclick="saveText()">Save to File</button>
+<a id="downloadLink"></a>
+
+<script>
+function saveText() {
+  const text = document.getElementById('myText').value;
+  const blob = new Blob([text], {type: 'text/plain'});
+  const url = URL.createObjectURL(blob);
+  document.getElementById('downloadLink').href = url;
+  document.getElementById('downloadLink').download = "myFile.txt";
+  document.getElementById('downloadLink').click();
+  URL.revokeObjectURL(url); // Clean up the URL
+}
+</script>
