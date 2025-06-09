@@ -8,7 +8,7 @@ function saveText() {
   const blob = new Blob([text], {type: 'text/plain'});
   const url = URL.createObjectURL(blob);
   document.getElementById('downloadLink').href = url;
-  document.getElementById('downloadLink').download = "myFile.txt";
+  document.getElementById('downloadLink').download = "Save.txt";
   document.getElementById('downloadLink').click();
   URL.revokeObjectURL(url); // Clean up the URL
 }
