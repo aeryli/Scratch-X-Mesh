@@ -1,15 +1,17 @@
-<input type="text" id="myText">
-<button onclick="saveText()">Save to File</button>
-<a id="downloadLink"></a>
-
-<script>
-function saveText() {
-  const text = document.getElementById('myText').value;
-  const blob = new Blob([text], {type: 'text/plain'});
-  const url = URL.createObjectURL(blob);
-  document.getElementById('downloadLink').href = url;
-  document.getElementById('downloadLink').download = "Save.txt";
-  document.getElementById('downloadLink').click();
-  URL.revokeObjectURL(url); // Clean up the URL
-}
-</script>
+<html></html>
+<body>
+    <p id="mytext" document.designMode='on' contentEditable ='true'>hi</p>
+    <button onclick="saveText()" type="button">Save to File</button>
+    <a id="downloadLink"></a>
+    <script>
+        function saveText() {
+            const text = document.getElementById('mytext').innerHTML;
+            const blob = new Blob([text], {type: 'text/plain'});
+            const url = URL.createObjectURL(blob);
+            document.getElementById('downloadLink').href = url;
+            document.getElementById('downloadLink').download = "Save.txt";
+            document.getElementById('downloadLink').click();
+            URL.revokeObjectURL(url); // Clean up the URL
+        }
+    </script>
+</body>
