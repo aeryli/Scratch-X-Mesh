@@ -1,8 +1,10 @@
 # Scratch-X-Mesh
 ### Links used (credit):
-jwklong.github.io/extforge
-gemini.google.com
-github.com
+[EXTforge](Https://jwklong.github.io/extforge)
+
+[Google Gemini](Https://gemini.google.com)
+
+[Github](github.com)
 
 ### What is this?
 using github's pages I am uploading and exporting public data using .txt files
