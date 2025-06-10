@@ -1,5 +1,5 @@
 // script.js
-import Github.js from https://aeryli.github.io/Scratch-X-Mesh/Github.js
+import Github.js from https://raw.githubusercontent.com/aeryli/Scratch-X-Mesh/refs/heads/main/GitHub.js
 const uploadForm = document.getElementById('uploadForm');
 const txtFile = document.getElementById('txtFile');
 const statusElement = document.getElementById('status');
