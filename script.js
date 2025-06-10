@@ -3,11 +3,23 @@ import Github.js from https://raw.githubusercontent.com/aeryli/Scratch-X-Mesh/re
 const uploadForm = document.getElementById('uploadForm');
 const txtFile = document.getElementById('txtFile');
 const statusElement = document.getElementById('status');
+const urlParams = new URLSearchParams(window.location.search);
+
+// Check if a parameter exists
+const hasParam = urlParams.has('upload');
+if (hasParam) {
+  // Get the value of a parameter
+  const paramValue = urlParams.get('upload');
+  console.log('Value of upload:', paramValue);
+}
+// Get all values of a parameter (if it exists multiple times)
+// const allParamValues = urlParams.getAll('upload');
+// console.log('All values of upload:', allParamValues);
 
 uploadForm.addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  const file = txtFile.files[0];
+  const file = paramValue;
   if (!file) {
     statusElement.textContent = 'Please select a file.';
     return;
