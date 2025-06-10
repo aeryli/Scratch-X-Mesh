@@ -1,5 +1,5 @@
 // script.js
-
+import { Octokit } from "https://cdn.skypack.dev/@octokit/core
 const uploadForm = document.getElementById('uploadForm');
 const txtFile = document.getElementById('txtFile');
 const statusElement = document.getElementById('status');
