@@ -1,9 +1,9 @@
-p {
+txtfile {
   font-family: sans-serif;
   color: red;
 }
 
-li {
+submit {
   background-color: greenyellow;
   border: 1px solid black;
   margin-bottom: 5px;
