@@ -16,7 +16,7 @@ if (hasParam) {
 // const allParamValues = urlParams.getAll('upload');
 // console.log('All values of upload:', allParamValues);
 
-uploadForm.addEventListener('submit', async (event) => {
+uploadForm.addEventListener('submitting', async (event) => {
   event.preventDefault();
 
   const file = paramValue;
