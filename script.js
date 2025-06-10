@@ -1,5 +1,5 @@
 // script.js
-import { Octokit } from "https://cdn.skypack.dev/@octokit/core
+import Github.js from https://aeryli.github.io/Scratch-X-Mesh/Github.js
 const uploadForm = document.getElementById('uploadForm');
 const txtFile = document.getElementById('txtFile');
 const statusElement = document.getElementById('status');
