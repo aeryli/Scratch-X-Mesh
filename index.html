@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <body>
+    <link href="style.css" rel="stylesheet"/>
+    <button type="submit">Upload</button>
+    <title>Scratch-X-Mesh</title>
     <form id="uploadForm">
-        
         <input type="file" id="txtFile" accept=".txt">
         <button type="submit">Upload</button>
-        <title>Scratch-X-Mesh</title>
         <p id="status"></p>
         <!-- <p id="mytext" document.designMode='on' contentEditable ='true'>hi</p> -->
         <!-- <button onclick="saveText()" type="button">Save to File</button> -->
-        <a id="downloadLink"></a>
+        <!-- <a id="downloadLink"></a> -->
         <script>
             function saveText() {
                 const text = document.getElementById('mytext').innerHTML;
