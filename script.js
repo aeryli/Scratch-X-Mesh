@@ -1,5 +1,5 @@
 // script.js
-import Github.js from https://raw.githubusercontent.com/aeryli/Scratch-X-Mesh/refs/heads/main/GitHub.js
+import { * } from GitHub.js
 const uploadForm = document.getElementById('uploadForm');
 const txtFile = document.getElementById('txtFile');
 const statusElement = document.getElementById('status');
@@ -37,12 +37,12 @@ uploadForm.addEventListener('submit', async (event) => {
     const github = new Github({
       token: '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' // Replace with your PAT
     });
-    const repo = github.getRepo('Aeryli', 'Scratch-X-Mesh'); // Replace with your repo details
+    const repo = github.getRepo('aeryli', 'Scratch-X-Mesh'); // Replace with your repo details
 
     try {
       await repo.write(
         'main', // e.g., 'main'
-        `/${Metadata.txt}`, // Path and filename in your repo
+        `/Metadata.txt`, // Path and filename in your repo
         fileContent,
         'THRU SCRATCH' // Commit message
       );
